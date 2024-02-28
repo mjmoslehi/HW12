@@ -140,8 +140,10 @@ public class LambdaUtil {
      * @return a function supplier
      */
     public static Supplier<IntUnaryOperator> nMultiplyFunctionSupplier(int n) {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 11");
+
+        return () -> (x) -> x * n;
     }
 
     /**
