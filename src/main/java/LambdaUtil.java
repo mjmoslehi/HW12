@@ -65,8 +65,9 @@ public class LambdaUtil {
      * @return a string predicate
      */
     public static Predicate<String> lengthInRangePredicate(int min, int max) {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 5");
+        return x -> min <= x.length() && x.length()< max;
     }
 
     /**
