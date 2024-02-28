@@ -152,8 +152,10 @@ public class LambdaUtil {
      * @return a supplier instance
      */
     public static Supplier<Supplier<Supplier<String>>> trickyWellDoneSupplier() {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 12");
+
+        return () -> () -> () -> "WELL DONE";
     }
 
     /**
