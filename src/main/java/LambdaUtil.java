@@ -115,8 +115,10 @@ public class LambdaUtil {
      * @return binary sum operation
      */
     public static LongBinaryOperator longSumOperation() {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 9");
+
+        return Long::sum;
     }
 
     /**
