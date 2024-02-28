@@ -92,8 +92,10 @@ public class LambdaUtil {
      * @return int operation
      */
     public static IntUnaryOperator boundedRandomIntSupplier() {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 7");
+        Random random = new Random();
+        return random::nextInt;
     }
 
     /**
