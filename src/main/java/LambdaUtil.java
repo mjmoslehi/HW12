@@ -104,8 +104,9 @@ public class LambdaUtil {
      * @return square operation
      */
     public static IntUnaryOperator intSquareOperation() {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 8");
+        return (x)->x*x;
     }
 
     /**
