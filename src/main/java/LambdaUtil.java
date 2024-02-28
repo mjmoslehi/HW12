@@ -127,8 +127,9 @@ public class LambdaUtil {
      * @return string to int converter
      */
     public static ToIntFunction<String> stringToIntConverter() {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 10");
+        return Integer::parseInt;
     }
 
     /**
