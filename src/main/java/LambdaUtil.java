@@ -10,8 +10,8 @@ public class LambdaUtil {
      * @return a string supplier
      */
     public static Supplier<String> helloSupplier() {
-        //todo
-        return null;
+        System.out.println("q 1");
+        return () -> "Hello";
     }
 
     /**
