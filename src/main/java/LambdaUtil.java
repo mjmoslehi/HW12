@@ -1,5 +1,6 @@
 import java.math.BigDecimal;
 import java.util.Map;
+import java.util.Random;
 import java.util.function.*;
 
 public class LambdaUtil {
@@ -76,8 +77,12 @@ public class LambdaUtil {
      * @return int supplier
      */
     public static IntSupplier randomIntSupplier() {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 6");
+        return ()-> {
+            Random random = new Random();
+            return random.nextInt();
+        } ;
     }
 
 
