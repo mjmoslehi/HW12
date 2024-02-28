@@ -32,8 +32,16 @@ public class LambdaUtil {
      * @return function that repeats Strings
      */
     public static BiFunction<String, Integer, String> stringMultiplier() {
-        //todo
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 3");
+        return (x, y) -> {
+            StringBuilder multi = new StringBuilder();
+            for (int i = 0 ; i < y ; i ++){
+                multi.append(x);
+            }
+            return multi.toString();
+        };
+
     }
 
     /**
