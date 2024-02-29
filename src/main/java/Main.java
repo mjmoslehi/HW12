@@ -52,11 +52,11 @@ public class Main {
         Function<String, String> toLowerWithTrim = composeWithTrimFunction.apply(String::toLowerCase);
         System.out.println(toLowerWithTrim.apply(" HEY "));//hey
 
-//        //extra points
-//        BiFunction<IntUnaryOperator, IntPredicate, IntUnaryOperator> intFunctionToConditionalIntFunction
-//                = LambdaUtil.functionToConditionalFunction();
-//        IntUnaryOperator abs = intFunctionToConditionalIntFunction.apply(a -> -a, a -> a < 0);
-//        System.out.println(abs.applyAsInt(-5));//5
+        //extra points
+        BiFunction<IntUnaryOperator, IntPredicate, IntUnaryOperator> intFunctionToConditionalIntFunction
+                = LambdaUtil.functionToConditionalFunction();
+        IntUnaryOperator abs = intFunctionToConditionalIntFunction.apply(a -> -a, a -> a < 0);
+        System.out.println(abs.applyAsInt(-5));//5
 //
 //        BiFunction<Map<String, IntUnaryOperator>, String, IntUnaryOperator> functionLoader = LambdaUtil.functionLoader();
 //        Map<String, IntUnaryOperator> functionMap = new HashMap<>();

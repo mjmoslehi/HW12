@@ -179,8 +179,11 @@ public class LambdaUtil {
      * @return a binary function that receiver predicate and function and compose them to create a new function
      */
     public static BiFunction<IntUnaryOperator, IntPredicate, IntUnaryOperator> functionToConditionalFunction() {
-        //todo :: extra points
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 14");
+
+        return (intUnaryOperator, intPredicate) ->
+                input -> intPredicate.test(input) ? intUnaryOperator.applyAsInt(input) : input;
     }
 
     /**
