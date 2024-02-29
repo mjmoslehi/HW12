@@ -194,7 +194,9 @@ public class LambdaUtil {
      * @return a high-order function that fetches a function from a function map by a given name or returns identity()
      */
     public static BiFunction<Map<String, IntUnaryOperator>, String, IntUnaryOperator> functionLoader() {
-        //todo :: extra points
-        return null;
+        System.out.println("---------------------");
+        System.out.println("q 15");
+        return (functionMap, functionName) -> functionMap.getOrDefault(functionName, IntUnaryOperator.identity());
+
     }
 }
